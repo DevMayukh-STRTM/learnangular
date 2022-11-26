@@ -1,0 +1,18 @@
+<div class="todo">
+    <h1>
+        Welcome to a simple Todo
+    </h1>
+    <p>Here you can add todos and remove them too</p>
+    <br>
+    <div class="todo-input">
+        <input type="text" placeholder="Todo Title">
+        <textarea name="" id="" cols="30" rows="10">Todo Details</textarea>
+        <button class="btn btn-primary">Confirm</button>
+    </div>
+    <div class="todo-input" *ngFor="let todo of todos">
+        <div class="todo-box">
+            <p>{{ todo._id }}: {{ todo.title }}</p>
+            <p>{{ todo.description }}</p>
+        </div>
+    </div>
+</div>

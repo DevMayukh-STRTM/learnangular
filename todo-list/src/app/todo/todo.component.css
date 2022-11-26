@@ -1,0 +1,9 @@
+.todo {
+    padding: 50px;
+}
+
+.todo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
